@@ -1,0 +1,207 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{graphics}
+\usepackage{hyperref}
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=blue,
+  urlcolor=cyan,
+}
+
+\usetheme{Warsaw}
+\usecolortheme{beaver}
+\definecolor{clorange}{HTML}{E76600}
+\definecolor{clAlmostWhite}{HTML}{FEFFD9}
+
+\title[LTN01 :: NewsSources]{C++ News Sources of Note}
+\subtitle{Books, Podcasts and Beyond}
+\author{Adam Graliński}
+\date[FFFE\_21]{\textbf{C++ {\color{red}F}{\color{blue}F}{\color{green}F}{\color{yellow}E}, February 2021}}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{author}{fg=clAlmostWhite}
+\setbeamercolor{date}{fg=clAlmostWhite}
+\setbeamerfont{author}{size=\huge}
+\setbeamerfont{date}{size=\Large}
+
+\begin{document}
+
+{\usebackgroundtemplate{%
+ \includegraphics[width=\paperwidth,height=\paperheight]{pics/bg_galaxy.jpg}}
+\begin{frame}
+
+\titlepage{}
+\end{frame}
+}
+
+\begin{frame}
+\frametitle{Official C++ standard}
+\begin{itemize}
+  \item Purchase: \url{https://www.iso.org/standard/79358.html}
+  \item Official draft sources: \url{https://github.com/cplusplus/draft}
+  \item Working draft: \url{https://eel.is/c++draft/}
+\end{itemize}
+\begin{center}
+  \includegraphics[height=3cm]{pics/std_23_iterators.png}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Books}
+{\centering
+\begin{tabular}{m{8.5cm} m{2cm}}
+\begin{itemize}
+  \item C++ Best Practices
+  \begin{itemize}
+    \item by Jason Turner
+    \item Leanpub (e-book): \url{https://leanpub.com/cppbestpractices}
+    \item Amazon:
+      \href{https://www.amazon.com/Best-Practices-Simple-Specific-Action/dp/B08SJSZKJ5}{paperback}
+    \item \textit{this just in}: January 2021
+  \end{itemize}
+\end{itemize} &
+\fbox{\includegraphics[width=2cm]{pics/book_cppbest.jpg}} \vspace{0.1cm} \\
+
+\begin{itemize}
+  \item C++20 Recipes: A Problem-Solution Approach
+  \begin{itemize}
+    \item by J.B.~Browning and Bruce~Sutherland
+    \item Amazon:
+      \href{https://www.amazon.com/C-20-Recipes-Problem-Solution-Approach/dp/148425712X}
+      {e-book and paperback} available
+    \item April 2020
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/book_cpp20_recipes.jpg} \\
+
+\end{tabular}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Podcasts}
+{\centering
+\begin{tabular}{m{8.5cm} m{2cm}}
+\begin{itemize}
+  \item CppCast (Jason~Turner, Rob~Irving, JeanHeyd~Meneide)
+  \begin{itemize}
+    \item \url{https://cppcast.com/}
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/cppcast.png} \\
+
+\begin{itemize}
+  \item cpp.chat (Jon Kalb, Phil Nash)
+  \begin{itemize}
+    \item \url{https://cpp.chat/episodes/}
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/cppchat.jpg} \\
+
+\begin{itemize}
+  \item Two's Complement (Matt Godbolt, Ben Rady)
+  \begin{itemize}
+    \item \href{https://www.twoscomplement.org/\#podcast}{twoscomplement.org/\#podcast}
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/twc.png} \\
+\end{tabular}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Videocasts}
+{\centering
+\begin{tabular}{m{8.5cm} m{2cm}}
+\begin{itemize}
+  \item C++ Weekly (Jason Turner)
+  \begin{itemize}
+    \item \href{https://www.youtube.com/user/lefticus1/videos}{youtube.com/user/lefticus1/videos}
+    \item \href{https://www.youtube.com/watch?v=YbgH7yat-Jo}{Ep. 208 -- CMake/C++ Quick Start}
+    \item \href{https://www.youtube.com/watch?v=-F0j2VN4xEU}{Ep. 223 -- std::nextafter}
+    \item \href{https://www.youtube.com/watch?v=TAS85xmNDEc}{Ep. 258 -- std::source\_location}
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/vcast_lefticus.jpg} \\
+
+\begin{itemize}
+  \item One Lone Coder
+  \begin{itemize}
+    \item \href{https://www.youtube.com/c/javidx9/videos}{youtube.com/c/javidx9/videos}
+    \item \href{https://www.youtube.com/watch?v=PBvLs88hvJ8}{Brute Force Processing}
+    \item \href{https://www.youtube.com/watch?v=F8kx56OZQhg}{Programming a NES Emulator}
+    \item \href{https://www.youtube.com/watch?v=iChalAKXffs}{What Are Pointers?}
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/vcast_olc.jpg} \\
+\end{tabular}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Conferences}
+{\centering
+\begin{tabular}{m{8.5cm} m{2cm}}
+\begin{itemize}
+  \item CppCon
+  \begin{itemize}
+    \item \href{https://www.youtube.com/user/CppCon/videos}{youtube.com/user/CppCon/videos}
+    \item Updated mostly during CppCon
+    \item occasional updates in the meantime
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/conf_cppcon.jpg} \\
+
+\begin{itemize}
+  \item CppNow (BoostCon)
+  \begin{itemize}
+    \item \href{https://www.youtube.com/user/BoostCon/videos}{youtube.com/user/BoostCon/videos}
+    \item Updated rarely
+    \item lots of material available
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/conf_boostcon.jpg} \\
+\end{tabular}
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Conferences}
+{\centering
+\begin{tabular}{m{8.5cm} m{2cm}}
+\begin{itemize}
+  \item ACCU Conference
+  \begin{itemize}
+    \item
+      \href{https://www.youtube.com/channel/UCJhay24LTpO1s4bIZxuIqKw/videos}
+           {youtube.com/channel/\linebreak{}UCJhay24LTpO1s4bIZxuIqKw/videos}
+    \item Upcoming event: 10--13 March 2021
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/conf_accu.jpg} \\
+
+\begin{itemize}
+  \item code::dive
+  \begin{itemize}
+    \item
+      \href{https://www.youtube.com/channel/UCU0Rt8VHO5-YNQXwIjkf-1g/videos}
+           {youtube.com/channel/\linebreak{}UCU0Rt8VHO5-YNQXwIjkf-1g/videos}
+  \end{itemize}
+\end{itemize} &
+\includegraphics[width=2cm]{pics/conf_codedive.jpg} \\
+\end{tabular}
+}
+
+\begin{center}
+\Huge Thank you!
+\end{center}
+\end{frame}
+
+\end{document}
