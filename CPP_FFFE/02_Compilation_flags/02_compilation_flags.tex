@@ -19,10 +19,12 @@
 \usecolortheme{beaver}
 \definecolor{clOrange}{HTML}{E76600}
 \definecolor{clAlmostWhite}{HTML}{FEFFD9}
+\definecolor{clGreen}{HTML}{2aa198}
 \definecolor{clFlag}{HTML}{D33682}
 \definecolor{clFlagOpt}{HTML}{CB4B16}
+\definecolor{clRedFlag}{HTML}{DC322F}
 
-\title[LTN02 :: CompilationFlags]{g++ compilation flags}
+\title[LTN02 :: CompilationFlags]{A quick look at C++ compilation flags}
 \author{Adam Graliński}
 \date[FFFE\_21]{\textbf{C++ {\color{red}F}{\color{blue}F}{\color{green}F}{\color{yellow}E}, February 2021}}
 
@@ -44,8 +46,9 @@
 
 \begin{frame}[fragile]
 \frametitle{Flags}
-
 \centering
+\begin{center}{\huge {\color{clGreen}The Easy Part}}\end{center}
+\vspace{1ex}
 \begin{BVerbatim}[commandchars=\\\{\}]
 g++ [\textcolor{clFlag}{-c}|\textcolor{clFlag}{-S}|\textcolor{clFlag}{-E}] [\textcolor{clFlag}{-std=}\textcolor{clFlagOpt}{standard}]
     [\textcolor{clFlag}{-g}] [\textcolor{clFlag}{-pg}] [\textcolor{clFlag}{-O}\textcolor{clFlagOpt}{level}]
@@ -53,7 +56,7 @@ g++ [\textcolor{clFlag}{-c}|\textcolor{clFlag}{-S}|\textcolor{clFlag}{-E}] [\tex
     [\textcolor{clFlag}{-I}\textcolor{clFlagOpt}{dir...}] [\textcolor{clFlag}{-L}\textcolor{clFlagOpt}{dir...}]
     [\textcolor{clFlag}{-D}\textcolor{clFlagOpt}{macro[=defn]...}] [\textcolor{clFlag}{-U}\textcolor{clFlagOpt}{macro}]
     [-foption...] [-mmachine-option...]
-    [-o outfile] [\textcolor{clFlag}{@}\textcolor{clFlag}{file}] infile...
+    [\textcolor{clFlag}{-o} outfile] [\textcolor{clFlag}{@}\textcolor{clFlag}{file}] infile...
 \end{BVerbatim}
 \end{frame}
 
@@ -62,9 +65,9 @@ g++ [\textcolor{clFlag}{-c}|\textcolor{clFlag}{-S}|\textcolor{clFlag}{-E}] [\tex
 \begin{table}
 \begin{tabular}{l l}
 \toprule
-\texttt{\color{clFlag}{-c}} & stop after compilation \& assembly --- do not link \\ [3ex]
-\texttt{\color{clFlag}{-S}} & stop after compilation --- do not assemble \\ [3ex]
 \texttt{\color{clFlag}{-E}} & stop after preprocessing step --- do not compile \\ [3ex]
+\texttt{\color{clFlag}{-S}} & stop after compilation --- do not assemble \\ [3ex]
+\texttt{\color{clFlag}{-c}} & stop after compilation \& assembly --- do not link \\ [3ex]
 \bottomrule
 \end{tabular}
 \end{table}
@@ -179,17 +182,88 @@ g++ [\textcolor{clFlag}{-c}|\textcolor{clFlag}{-S}|\textcolor{clFlag}{-E}] [\tex
 
 
 \begin{frame}[fragile]
-\frametitle{Flags, revisited}
-
+\frametitle{Flags (continued)}
 \centering
+\begin{center}{\huge {\color{clGreen}The Magical Part}}\end{center}
+\vspace{1ex}
 \begin{BVerbatim}[commandchars=\\\{\}]
 g++ [\textcolor{clFlag}{-c}|\textcolor{clFlag}{-S}|\textcolor{clFlag}{-E}] [\textcolor{clFlag}{-std=}\textcolor{clFlagOpt}{standard}]
     [\textcolor{clFlag}{-g}] [\textcolor{clFlag}{-pg}] [\textcolor{clFlag}{-O}\textcolor{clFlagOpt}{level}]
-    [-Wwarn...] [-Wpedantic]
+    [\textcolor{clGreen}{-W}\textcolor{clFlagOpt}{warn...}] [\textcolor{clGreen}{-Wpedantic}]
     [\textcolor{clFlag}{-I}\textcolor{clFlagOpt}{dir...}] [\textcolor{clFlag}{-L}\textcolor{clFlagOpt}{dir...}]
     [\textcolor{clFlag}{-D}\textcolor{clFlagOpt}{macro[=defn]...}] [\textcolor{clFlag}{-U}\textcolor{clFlagOpt}{macro}]
-    [-foption...] [-mmachine-option...]
-    [-o outfile] [\textcolor{clFlag}{@}\textcolor{clFlag}{file}] infile...
+    [\textcolor{clGreen}{-f}\textcolor{clFlagOpt}{option...}] [\textcolor{clGreen}{-m}\textcolor{clFlagOpt}{machine-option...}]
+    [\textcolor{clFlag}{-o} outfile] [\textcolor{clFlag}{@}\textcolor{clFlag}{file}] infile...
+\end{BVerbatim}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{-W: warning options}
+\begin{table}
+\begin{tabular}{l l}
+\toprule
+\texttt{\textcolor{clGreen}{-W}all \textcolor{clGreen}{-W}extra} &
+the best quicksetting \\ [2ex]
+\texttt{\textcolor{clGreen}{-W}error} & treat warnings as errors \\ [2ex]
+\texttt{\textcolor{clGreen}{-W}everything} & if you compile with Clang++ \\ [2ex]
+\midrule
+\texttt{\textcolor{clGreen}{-W}shadow} & issue warning on \textit{shadowing} \\ [2ex]
+\texttt{\textcolor{clGreen}{-W}double-promotion} &
+warn on implicit \textit{float to double promotion} \\ [2ex]
+\texttt{\textcolor{clGreen}{-W}format=2} & upgrade -Wformat checks \\ [2ex]
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{-f, -m: \textit{flags} and machine options}
+\begin{table}
+\begin{tabular}{l l}
+\toprule
+\texttt{\textcolor{clGreen}{-f}stack-usage} &
+\texttt{\textcolor{clGreen}{-m}arch=native} \\ [3ex]
+\texttt{\textcolor{clGreen}{-f}no-common} &
+\texttt{\textcolor{clGreen}{-m}abi=...} \\ [3ex]
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{center}and {\textit many} others\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Problematic flags}
+\begin{table}
+\begin{tabular}{l l}
+\toprule
+\texttt{\textcolor{clRedFlag}{-ffast-math}} &
+Breaks IEEE/ISO rules for math functions.\\ [3ex]
+\texttt{\textcolor{clRedFlag}{-flto}} &
+Enables \textit{link time optimization}.\\ [3ex]
+\texttt{\textcolor{clRedFlag}{-Wunused-parameter}} &
+Warns about parameters passed but not used in functions.\\ [3ex]
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Flags, revisited}
+
+\centering
+
+\begin{BVerbatim}[commandchars=\\\{\}]
+g++ [\textcolor{clFlag}{-c}|\textcolor{clFlag}{-S}|\textcolor{clFlag}{-E}] [\textcolor{clFlag}{-std=}\textcolor{clFlagOpt}{standard}]
+    [\textcolor{clFlag}{-g}] [\textcolor{clFlag}{-pg}] [\textcolor{clFlag}{-O}\textcolor{clFlagOpt}{level}]
+    [\textcolor{clGreen}{-W}\textcolor{clFlagOpt}{warn...}] [\textcolor{clGreen}{-Wpedantic}]
+    [\textcolor{clFlag}{-I}\textcolor{clFlagOpt}{dir...}] [\textcolor{clFlag}{-L}\textcolor{clFlagOpt}{dir...}]
+    [\textcolor{clFlag}{-D}\textcolor{clFlagOpt}{macro[=defn]...}] [\textcolor{clFlag}{-U}\textcolor{clFlagOpt}{macro}]
+    [\textcolor{clGreen}{-f}\textcolor{clFlagOpt}{option...}] [\textcolor{clGreen}{-m}\textcolor{clFlagOpt}{machine-option...}]
+    [\textcolor{clFlag}{-o} outfile] [\textcolor{clFlag}{@}\textcolor{clFlag}{file}] infile...
 \end{BVerbatim}
 
 \vspace{4.5ex}
