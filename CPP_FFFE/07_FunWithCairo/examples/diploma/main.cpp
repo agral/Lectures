@@ -9,6 +9,6 @@ int main()
     builder.draw_background();
     builder.draw_border();
     builder.draw_title();
-    builder.draw_flavor_text("Adam Graliński");
+    builder.draw_flavor_text("Mr. John Doe");
   }
 }
