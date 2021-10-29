@@ -43,8 +43,8 @@ int main()
   double avg_velocity = std::accumulate(velocities.begin(), velocities.end(), 0.0) / velocities.size();
   //std::cout << "The average velocity is " << avg_velocity << "\n";
 
-  // If average velocity >= 3.0, the user has been running:
-  bool isExerciseRun = (avg_velocity >= 3.0);
+  // If average velocity >= 2.0, the user has been running:
+  bool isExerciseRun = (avg_velocity >= 2.0);
   std::cout << "You have " << (isExerciseRun ? "" : "NOT") << " been running today.\n";
 
   /*
