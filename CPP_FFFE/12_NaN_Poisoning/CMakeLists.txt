@@ -6,3 +6,4 @@ project(nan_poisoning)
 
 add_executable(nan_behavior code/nan_behavior.cpp)
 add_executable(typical_nan_sources code/typical_nan_sources.cpp)
+add_executable(smartwatch code/nan_poisoning_demo.cpp)
