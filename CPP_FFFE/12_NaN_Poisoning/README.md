@@ -2,7 +2,7 @@
 # NaN poisoning in C and C++
 This is the 12th conference call in the CPP\_FFFE series. The theme of this episode is NaN poisoning: what is this phenomenon, how it arises, and what its effects are.
 
-Carried out on October 29, 2021; in the Polish language. Transcription will be made available [here]. English transcription will be made available [here].
+Carried out on October 29, 2021; in the Polish language. Transcription is available [here](https://github.com/agral/Lectures/blob/master/CPP_FFFE/12_NaN_Poisoning/transcript_pl.md).
 
 ### Attributions
 The contents of this talk as well as the source code were created by the author.
