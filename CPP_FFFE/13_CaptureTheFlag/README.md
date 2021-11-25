@@ -14,7 +14,7 @@ Polish transcription will be made available **here**.
 ### Attributions
 This talk covers a specific CTF challenge from [PicoCTF](https://picoctf.org/). Parts of the source code are discussed.
 
-The title image was created by the auhtor, using the following files:
+The title image was created by the author, using the following files:
 - Galaxy background: **Wikimedia**, [source](https://commons.wikimedia.org/wiki/File:NGC_2336-Big-Beautiful_and_Blue.jpg)
 - Green meadow under a blue sky: **Wikimedia**, [source](https://upload.wikimedia.org/wikipedia/commons/2/2b/Paisaje_fondo_de_la_pantalla_de_inicio_de_windows_2003_en_alta_definicion.jpg)
 - Rangefinder template: **Wikimedia**, [source](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Rangefinder_reticle_08a.svg/640px-Rangefinder_reticle_08a.svg.png)
