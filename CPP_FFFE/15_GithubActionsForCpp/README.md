@@ -1,4 +1,4 @@
-![Title slide for CPP_Friends#15](...)
+![Title slide for CPP_Friends#15](https://raw.githubusercontent.com/agral/Lectures/master/CPP_FFFE/15_GithubActionsForCpp/pics/poster/poster_15.jpg)
 # Github Actions
 This is the 15th meeting in the CPP\_Friends series, where the subject of continuous integration is introduced.
 I aim to demonstrate how simple it is to just get started with using CI/CD pipelines for projects hosted on Github.
