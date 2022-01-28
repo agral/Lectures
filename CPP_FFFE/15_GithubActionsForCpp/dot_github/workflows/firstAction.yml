@@ -1,0 +1,28 @@
+name: C++ CI action demo
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v2
+       with:
+         submodules: recursive
+     - name: invoke cmake
+       run: |
+         mkdir build
+         cd build
+         cmake ..
+     - name: invoke make
+       run: |
+         cd build
+         make
+     - name: run test_FriendlyCode
+       run: |
+         cd build
+         ./test_FriendlyCode
