@@ -1,2 +1,6 @@
 /slides/build/
 /code/build/
+
+/code/test_storing
+/code/test_reading_random
+/code/test_reading_sequential
