@@ -4,3 +4,4 @@
 /code/test_storing
 /code/test_reading_random
 /code/test_reading_sequential
+/code/test_vector_or_hashset
