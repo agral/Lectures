@@ -3,7 +3,7 @@
 #include <string>
 
 #include "spdlog/spdlog.h"
-#include "spdlog/sinks/rotating_file_sink.h" // for a basic file logger
+#include "spdlog/sinks/rotating_file_sink.h" // for a rotating file logger
 
 using fmt::format;
 
