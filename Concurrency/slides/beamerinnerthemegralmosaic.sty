@@ -1,0 +1,56 @@
+\RequirePackage{tikz}
+
+\mode<presentation>
+
+\definecolor{pagebg}{HTML}{160116}
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=brown] (0,2) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=orange] (0,0) rectangle(2.95,1.9);
+  \fill[color=blue!50!cyan!80] (3.05,0) rectangle(\the\paperwidth,1.9);
+  \ifnum\thepage>1\relax%
+    \fill[color=pagebg] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fi
+  \end{tikzpicture}
+}
+
+% Title page
+\defbeamertemplate*{title page}{gralbm}[1][]
+{
+  % full-screen background image in the back: darkmosaic.png
+  \begin{tikzpicture}[overlay, remember picture]
+    \node[inner sep=0pt, outer sep=0pt, anchor=north east] at (current page.north east) {
+      \includegraphics[width=\the\paperwidth, height=\the\paperheight]{img/darkmosaicbg.png}};
+  \end{tikzpicture}
+  \vskip 2cm%
+  %
+  \begin{beamercolorbox}[center, sep=8pt, #1]{title page header}%
+    {\usebeamerfont{Helvetica}\huge\inserttitle{}\par{}}%
+    \vskip 0.5cm%
+    {\usebeamerfont{Helvetica}\large\insertsubtitle{}\par{}}%
+  \end{beamercolorbox}%
+  \vskip 2cm%
+  %
+  \begin{beamercolorbox}[wd=12cm, leftskip=3cm, #1]{author}%
+    {\usebeamerfont{author}\textcolor{white}{\insertauthor{}}}%
+  \end{beamercolorbox}%
+  %
+  \vskip 0.2cm%
+  \begin{beamercolorbox}[wd=12cm, leftskip=3cm, #1]{date}
+    {\usebeamerfont{author}\textcolor{white}{\insertdate{}}}%
+  \end{beamercolorbox}
+  \vfill
+}
+
+% Items
+\newcommand\graldot{%
+  \begin{tikzpicture}
+    \fill[orange] (1ex, 1ex) circle (1ex);
+  \end{tikzpicture}
+}
+\setbeamertemplate{items}[]
+\setbeamertemplate{sections/subsections in toc}[square]
+
+\mode<all>
