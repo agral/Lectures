@@ -1,0 +1,15 @@
+body {
+    font-family: System UI;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    max-width: calc(100% - 5rem);
+    margin-inline: auto;
+}
