@@ -38,6 +38,31 @@ main {
     padding: 0 2rem;
 }
 
+.slide h1 {
+    font-size: 4rem;
+    line-height: 1.33;
+    margin: 1rem;
+}
+
+.page p {
+    font-size: 1.33rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem; /* just temporary? to put it a bit lower. */
+    background: #efe;
+    color: #323;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+.btn:hover {
+    background: #323;
+    color: #efe;
+}
+
 #slide01 {
     background: var(--solarized-blue);
 }
