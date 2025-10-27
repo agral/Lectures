@@ -28,6 +28,16 @@ main {
     margin-inline: auto;
 }
 
+.slide {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
 #slide01 {
     background: var(--solarized-blue);
 }
