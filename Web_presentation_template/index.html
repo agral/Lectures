@@ -3,20 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
+        <title>Presentation Title</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="content">
-            <section>
-                <header>header</header>
+        <!-- Page 01: title -->
+        <section id="slide01" class="slide">
+            <header>header</header>
+            <main>
                 <h1>Title</h1>
                 <h2>Somewhat Longer Subtitle</h2>
                 <h6>Presented by: Adam Graliński</h6>
-                <footer>
-                    &lt;slide_num&gt;
-                </footer>
-            </section>
-        </div>
+            </main>
+            <footer>
+                <a href="#slide01" class="btn btn-prev">Prev Page</a>
+                &lt;1&gt;
+                <a href="#slide02" class="btn btn-next">Next Page</a>
+            </footer>
+        </section>
+
+        <!-- Page 02: the conspect -->
+        <section id="slide02" class="slide">
+            <header>header</header>
+            <main>
+                <h1>Table of Contents</h1>
+                <h6>A ToC</h6>
+            </main>
+            <footer>
+                <a href="#slide01" class="btn btn-prev">Prev Page</a>
+                &lt;2&gt;
+                <a href="#slide03" class="btn btn-next">Next Page</a>
+            </footer>
+        </section>
     </body>
 </html>
