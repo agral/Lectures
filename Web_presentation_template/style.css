@@ -1,7 +1,21 @@
+:root {
+    --solarized-base01: #586e75;
+    --solarized-base00: #657b83;
+    --solarized-orange: #cb4b16;
+    --solarized-blue: #268bd2;
+    --solarized-cyan: #2aa198;
+    --solarized-green: #859900;
+    --solarized-violet: #6c71c4;
+}
+
 body {
     font-family: System UI;
     font-size: 1.25rem;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
 }
 
 img {
@@ -12,4 +26,17 @@ img {
 main {
     max-width: calc(100% - 5rem);
     margin-inline: auto;
+}
+
+#slide01 {
+    background: var(--solarized-blue);
+}
+#slide02 {
+    background: var(--solarized-cyan);
+}
+#slide03 {
+    background: var(--solarized-green);
+}
+#slide04 {
+    background: var(--solarized-violet);
 }
