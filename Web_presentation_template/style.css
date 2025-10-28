@@ -44,9 +44,14 @@ main {
     margin: 1rem;
 }
 
+.slide li {
+    text-align: left;
+}
+
 .page p {
     font-size: 1.33rem;
 }
+
 
 .btn {
     display: inline-block;
