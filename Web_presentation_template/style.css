@@ -47,6 +47,10 @@ main {
     padding: 0 2rem;
 }
 
+.slide main {
+    flex-grow: 1;
+}
+
 .slide h1 {
     font-size: 4rem;
     line-height: 1.33;
