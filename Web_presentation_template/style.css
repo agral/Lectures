@@ -44,17 +44,47 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 2rem;
 }
 
 .slide main {
     flex-grow: 1;
+    padding: 0 2rem;
 }
 
 .slide h1 {
     font-size: 4rem;
     line-height: 1.33;
     margin: 1rem;
+}
+
+/* the footer is itself a flex container; holds the slide number and nav buttons. */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .left, footer .right {
+    min-width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+footer .left {
+    flex-direction: row;
+}
+footer .right {
+    flex-direction: row-reverse;
+}
+
+footer .center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide li {
@@ -65,11 +95,9 @@ main {
     font-size: 1.33rem;
 }
 
-
 .btn {
     display: inline-block;
     padding: 0.5rem 0.75rem;
-    margin-top: 1rem; /* just temporary? to put it a bit lower. */
     background: #efe;
     color: #323;
     font-size: 1.1rem;
