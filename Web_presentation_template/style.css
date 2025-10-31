@@ -46,9 +46,17 @@ main {
     text-align: center;
 }
 
+.slide header {
+    min-height: 3rem;
+}
+
 .slide main {
     flex-grow: 1;
     padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide h1 {
