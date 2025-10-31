@@ -1,0 +1,15 @@
+footer {
+    background: rgba(50, 50, 50, 0.2)
+}
+
+footer .left {
+    background: rgba(200, 100, 100, 0.2)
+}
+
+footer .center {
+    background: rgba(100, 200, 100, 0.2)
+}
+
+footer .right {
+    background: rgba(100, 100, 200, 0.2)
+}
