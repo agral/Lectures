@@ -21,7 +21,7 @@ function CreateFooter(root, slideNum, totalSlides) {
 
     const divRight = document.createElement("div")
     divRight.className = "right"
-    if (slideNum < totalSlides-1) {
+    if (slideNum < totalSlides) {
         // Add a forward button:
         const btnNext = document.createElement("a")
         btnNext.className = "btn btn-next"
@@ -41,10 +41,7 @@ function main() {
     let slides = document.getElementsByClassName("slide")
 
     for (let i = 0; i < slides.length; i++) {
-        let currFooter = slides[i].getElementsByTagName("footer")[0]
-        if (currFooter == null) {
-            CreateFooter(slides[i], (i+1), slides.length)
-        }
+        CreateFooter(slides[i], (i+1), slides.length)
     }
 }
 
