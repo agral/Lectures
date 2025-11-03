@@ -29,10 +29,35 @@ function InsertSlideNumber(footer, num, count) {
     divCenter.innerHTML = padZeroes(num) + " / " + padZeroes(count)
 }
 
+function DirectInsertSlideNumber(root, num, count) {
+    root.innerHTML = padZeroes(num) + " / " + padZeroes(count)
+}
+
+function CreateFooter(root, slideNum, count) {
+    const footer = document.createElement("footer")
+    const divLeft = document.createElement("div")
+    divLeft.className = "left"
+    const divCenter = document.createElement("div")
+    divCenter.className = "center"
+    const divRight = document.createElement("div")
+    divRight.className = "right"
+
+    DirectInsertSlideNumber(divCenter, slideNum, count)
+
+    footer.appendChild(divLeft)
+    footer.appendChild(divCenter)
+    footer.appendChild(divRight)
+
+    root.appendChild(footer)
+}
+
 function main() {
     let slides = document.getElementsByClassName("slide")
 
-    for (let i = 0; i < slides.length; i++ ) {
+    CreateFooter(slides[1], 2, slides.length)
+
+    /*
+    for (let i = 0; i < slides.length; i++) {
         let currFooter = slides[i].getElementsByTagName("footer")[0]
         if (currFooter == null) {
             console.log("Error: could not find a footer in slide#'" + (i+1) + "'.")
@@ -42,6 +67,7 @@ function main() {
         }
         InsertSlideNumber(currFooter, i+1, slides.length)
     }
+    */
 }
 
 main()
