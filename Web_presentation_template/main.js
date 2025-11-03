@@ -1,6 +1,6 @@
 let currSlide = 1
 
-function padZeroes(num, places) {
+function padZeroes(num, places=2) {
     return String(num).padStart(places, "0")
 }
 
@@ -19,14 +19,14 @@ function modifyFooter() {
     console.log("Successfully got hold of the current slide's footer.")
 }
 
-function InsertSlideNumber(num, footer) {
+function InsertSlideNumber(footer, num, count) {
     let divCenter = footer.getElementsByClassName("center")[0]
     if (divCenter == null) {
         console.log("Error: could not find div.center in '" + footer + "'.")
         console.log("Please fix the syntax of slides in index.html.")
         return
     }
-    divCenter.innerHTML = "testing" + num
+    divCenter.innerHTML = padZeroes(num) + " / " + padZeroes(count)
 }
 
 function main() {
@@ -40,7 +40,7 @@ function main() {
             console.log("Aborting, navigation will not work.")
             return
         }
-        InsertSlideNumber(i+1, currFooter)
+        InsertSlideNumber(currFooter, i+1, slides.length)
     }
 }
 
