@@ -25,6 +25,7 @@ body {
     padding: 0;
     overflow: hidden;
     background: #fff;
+    color: #000;
 }
 
 img {
@@ -44,6 +45,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: var(--solarized-base3);
 }
 
 .slide header {
@@ -63,6 +65,10 @@ main {
     font-size: 4rem;
     line-height: 1.33;
     margin: 1rem;
+}
+
+.slide li {
+    text-align: left;
 }
 
 /* the footer is itself a flex container; holds the slide number and nav buttons. */
@@ -93,39 +99,23 @@ footer .center {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: var(--solarized-base1);
 }
 
-.slide li {
-    text-align: left;
-}
-
-.page p {
-    font-size: 1.33rem;
-}
-
-.btn {
+footer .btn {
     display: inline-block;
     padding: 0.5rem 0.75rem;
-    background: #efe;
-    color: #323;
+    background: var(--solarized-base1);
+    color: var(--solarized-base02);
     font-size: 1.1rem;
     text-decoration: none;
     transition: all 0.3s ease-in;
 }
-.btn:hover {
-    background: #323;
-    color: #efe;
+footer .btn:hover {
+    background: var(--solarized-base00);
+    color: var(--solarized-base03);
 }
 
 #slide01 {
-    background: var(--solarized-blue);
-}
-#slide02 {
-    background: var(--solarized-cyan);
-}
-#slide03 {
-    background: var(--solarized-green);
-}
-#slide04 {
-    background: var(--solarized-violet);
+    background: var(--solarized-base2);
 }
