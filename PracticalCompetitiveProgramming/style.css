@@ -1,0 +1,121 @@
+:root {
+    --solarized-base03:  #002b36;
+    --solarized-base02:  #073642;
+    --solarized-base01:  #586e75;
+    --solarized-base00:  #657b83;
+    --solarized-base0:   #839496;
+    --solarized-base1:   #93a1a1;
+    --solarized-base2:   #eee8d5;
+    --solarized-base3:   #fdf6e3;
+    --solarized-yellow:  #b58900;
+    --solarized-orange:  #cb4b16;
+    --solarized-red:     #dc322f;
+    --solarized-magenta: #d33682;
+    --solarized-violet:  #6c71c4;
+    --solarized-blue:    #268bd2;
+    --solarized-cyan:    #2aa198;
+    --solarized-green:   #859900;
+}
+
+body {
+    font-family: System UI;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    max-width: calc(100% - 5rem);
+    margin-inline: auto;
+}
+
+.slide {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--solarized-base3);
+}
+
+.slide header {
+    min-height: 3rem;
+}
+
+.slide main {
+    flex-grow: 1;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide h1 {
+    font-size: 4rem;
+    line-height: 1.33;
+    margin: 1rem;
+}
+
+.slide li {
+    text-align: left;
+}
+
+/* the footer is itself a flex container; holds the slide number and nav buttons. */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .left, footer .right {
+    min-width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+footer .left {
+    flex-direction: row;
+}
+footer .right {
+    flex-direction: row-reverse;
+}
+
+footer .center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--solarized-base1);
+}
+
+footer .btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    background: var(--solarized-base1);
+    color: var(--solarized-base02);
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+}
+footer .btn:hover {
+    background: var(--solarized-base00);
+    color: var(--solarized-base03);
+}
+
+#slide01 {
+    background: var(--solarized-base2);
+}
