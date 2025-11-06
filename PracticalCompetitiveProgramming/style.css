@@ -116,6 +116,16 @@ footer .btn:hover {
     color: var(--solarized-base03);
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.flexcolumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #slide01 {
     background: var(--solarized-base2);
 }
