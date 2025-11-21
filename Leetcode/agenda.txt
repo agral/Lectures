@@ -1,7 +1,0 @@
-1. Wstęp i opis zagadnienia nauki programowania
-2. Opis platformy leetcode.com (the goat)
-3. Co działa, a na co uważać. Pitfalls, timesinks.
-4. Polecane listy zadań
-5. Framework testowy. Spięcie wszystkiego z gitem.
-6. Śledzenie postępów
-7. Słowa końcowe |->
