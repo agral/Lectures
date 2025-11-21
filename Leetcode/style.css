@@ -126,6 +126,14 @@ footer .btn:hover {
     justify-content: space-between;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.vspace3 {
+    height: 3rem;
+}
+
 #slide01 {
     /*not really sure whether base2 is the good value for the background.*/
     /*maybe base3 looks just better, on all slides. But maybe some custom background/gradient should be applied here?*/
