@@ -10,7 +10,7 @@ function CreateFooter(root, slideNum, totalSlides) {
         // Add a back button:
         const btnBack = document.createElement("a")
         btnBack.className = "btn btn-prev"
-        btnBack.innerHTML = '<i class="fa-solid fa-arrow-left"></i>Prev Page'
+        btnBack.innerHTML = '<i class="fa-solid fa-arrow-left"></i> Wstecz'
         btnBack.href = "#slide" + padZeroes(slideNum-1)
         divLeft.appendChild(btnBack)
     }
@@ -25,7 +25,7 @@ function CreateFooter(root, slideNum, totalSlides) {
         // Add a forward button:
         const btnNext = document.createElement("a")
         btnNext.className = "btn btn-next"
-        btnNext.innerHTML = 'Next Page<i class="fa-solid fa-arrow-right"></i>'
+        btnNext.innerHTML = 'Dalej <i class="fa-solid fa-arrow-right"></i>'
         btnNext.href = "#slide" + padZeroes(slideNum+1)
         divRight.appendChild(btnNext)
     }
