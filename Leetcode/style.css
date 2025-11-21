@@ -127,5 +127,7 @@ footer .btn:hover {
 }
 
 #slide01 {
-    background: var(--solarized-base2);
+    /*not really sure whether base2 is the good value for the background.*/
+    /*maybe base3 looks just better, on all slides. But maybe some custom background/gradient should be applied here?*/
+    /*background: var(--solarized-base2);*/
 }
