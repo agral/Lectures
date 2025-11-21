@@ -43,13 +43,13 @@ Dodatkowo można znaleźć (raczej nie spodziewałbym się tego na professionalu
 Co trzeba umieć na professionala - w zasadzie wszystko, bo wszystko może "się trafić".
 Przerobienie takiej listy 75 zadań to 2.5 - 3 miesiące pracy zakładając jedno zadanie dziennie.
 
+## 6. Śledzenie postępów.
+Śledzenie postępów na LC jest banalnie proste. Cały portal jest mocno zgamifikowany.
+
 ## 5. Framework testowy. Spięcie wszystkiego z gitem.
 Warto zachowywać sobie przygotowane przez siebie rozwiązania zadań. Warto użyć do tego dodatkowego
 mechanizmu, innego niż sam portal leetcode.
 Czasami wracamy do zadań ze "świeżą głową", z nowym pomysłem.
-
-## 6. Śledzenie postępów.
-Śledzenie postępów na LC jest banalnie proste. Cały portal jest mocno zgamifikowany.
 
 ## 7. Słowa końcowe.
 Może tutaj wspomnieć o tym co dalej. Spięcie frameworka testowego z edytorem.
