@@ -1,12 +1,14 @@
 # Competitive programming
 ## Czyli o skutecznej nauce algorytmiki na leetcode.com
 
-## 1. Wstęp i opis zagadnienia
+## 03. Wstęp i opis zagadnienia
+Jak wszyscy dobrze wiemy, w 2026 roku powinniśmy - według naszych MBOs - część naszego czasu pracy poświęcić na zaliczenie SW Testu na poziomie Professional.
 O czym będzie na szkoleniu. Nauka algorytmiki - teoretyczna oraz praktyczna.
 Leetcode obejmuje część praktyczną. Krótki wstęp o tym jak to działa.
 
 ## 2. Opis platformy leetcode.com
 O kozie. Krótkie przedstawienie portalu, z uwzględnieniem _daily challenges_.
+Dodatkowo: w zasadzie wymagane jest logowanie się. Konto podstawowe jest bezpłatne. Płatne ficzery moim zdaniem są kompletnie niewarte uwagi.
 
 ## 3. Co działa, a na co uważać. Pitfalls, timesinks.
 - generalnie działa robienie zadań - po to jest cały system.
