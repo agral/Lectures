@@ -134,6 +134,19 @@ footer .btn:hover {
     height: 3rem;
 }
 
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid black;
+}
+table td {
+    border: 1px solid black;
+    padding: 0 1rem;
+}
+
 #slide01 {
     /*not really sure whether base2 is the good value for the background.*/
     /*maybe base3 looks just better, on all slides. But maybe some custom background/gradient should be applied here?*/

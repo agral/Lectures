@@ -3,6 +3,14 @@
 
 ## 03. Wstęp i opis zagadnienia
 Jak wszyscy dobrze wiemy, w 2026 roku powinniśmy - według naszych MBOs - część naszego czasu pracy poświęcić na zaliczenie SW Testu na poziomie Professional.
+Myślę, że większość z nas jest zainteresowana zdobyciem tej certyfikacji, jako że wiąże się to nie tylko ze zwiększeniem swego prestiżu, ale także z dodatkowym
+dniem wolnym, benefitem finansowym, a od niedawna nawet nagrodami rzeczowymi. 
+
+(link do slajdu z komunikacją odnośnie klawiatur i innego gearu Samsunga za zdany SW Test).
+
+Na dzisiejszym spotkaniu chcę zaprezentować Wam, w jaki sposób wykorzystuję portal leetcode.com do nauki algorytmiki.
+Patrząc na historię swojego repozytorium z kodem na konkursy programistyczne, robię to od ponad trzech lat.
+
 O czym będzie na szkoleniu. Nauka algorytmiki - teoretyczna oraz praktyczna.
 Leetcode obejmuje część praktyczną. Krótki wstęp o tym jak to działa.
 
