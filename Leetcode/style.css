@@ -130,6 +130,10 @@ footer .btn:hover {
     font-style: italic;
 }
 
+.light {
+    color: rgba(0.0, 0.0, 0.0, 0.4);
+}
+
 .vspace3 {
     height: 3rem;
 }
