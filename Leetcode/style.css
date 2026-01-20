@@ -147,6 +147,11 @@ table td {
     padding: 0 1rem;
 }
 
+.listnone {
+    list-style: none;
+    margin-left: -1em;
+}
+
 #slide01 {
     /*not really sure whether base2 is the good value for the background.*/
     /*maybe base3 looks just better, on all slides. But maybe some custom background/gradient should be applied here?*/
